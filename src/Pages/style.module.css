@@ -34,8 +34,13 @@
 }
 
 .formLabel {
-  /* display: flex;*/
+  /* displfay: flex;*/
   text-align: left;
   width: 100%; 
   margin-bottom: 10px;
+}
+
+span {
+  color: red;
+  margin-top: 50px;
 }
