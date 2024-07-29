@@ -43,3 +43,8 @@ Ambiente de Produção: Vincule à branch master. Certifique-se de que esta vers
 Ambiente de Testes: Vincule à branch develop. Use este ambiente para testar novas funcionalidades antes de mover para produção.
 
 Este exercício ajudará a entender como organizar um projeto com GitFlow e a configurar deploys automáticos para diferentes ambientes.
+
+
+Professor Nicholas
+[Github da aula de Context](https://github.com/nicholasmacedoo/atualizar-bifurcacao)
+a partir da [template](https://github.com/FuturoDEV-Trip/M2S09-TEMPLATE-AULA2)
