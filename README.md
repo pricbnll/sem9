@@ -39,8 +39,11 @@ dentro do register > ```{ ...register('nome' , { required: true })}``` deixando 
     ```
         const schema = yup
             .object({
-                firstName: yup.string().required(),
-                age: yup.number().positive().integer().required(),
+                nome: yup.string().required(),
+                idade: yup.number().min(18).positive().integer().required(),
+                confirmPassword: yup.string()
+                    .oneOf([yup.ref('password'), null], 'As senhas devem coincidir')
+                    .required('A confirmação de senha é obrigatória.'),
             })
         .required()
     ```
@@ -58,12 +61,7 @@ dentro do register > ```{ ...register('nome' , { required: true })}``` deixando 
             password: yup.string().min(6, "A senha deve ter pelo menos 6 caracteres.").required("A senha é obrigatória."),  
         }).required()
     ```
-    Um exemplo de validação para confirmar senha:
-    ```
-        confirmPassword: yup.string()
-            .oneOf([yup.ref('password'), null], 'As senhas devem coincidir')
-            .required('A confirmação de senha é obrigatória.'),
-    ```
+ 
 10. Abaixo do input coloque a mensagem de errors para cada input - nome, email, password
 ```<span>{errors.nome?.message}</span>```
 
