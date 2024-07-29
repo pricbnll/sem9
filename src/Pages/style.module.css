@@ -8,7 +8,6 @@
   background-color: rgb(238, 243, 217);
 
 }
-
 .formContainer {
   font-size: 16px;
   padding: 20px;
@@ -16,26 +15,11 @@
   border-radius: 10px;
   background: rgb(243, 237, 237);
   width: 400px;
-
-}
-
-.formContainer form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.formControl {
-  height: 50px;
-  width: 100%;
-  border-radius: 12px;
-  border: 1px solid rgb(221, 221, 221);
 }
 
 .formLabel {
-  /* display: flex;*/
+  /* display: flex; */
   text-align: left;
   width: 100%; 
   margin-bottom: 10px;
-}
+} 

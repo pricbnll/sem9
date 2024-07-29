@@ -1,12 +1,12 @@
 import './App.css'
-import SimpleForm from './Pages/Form'
+import SimpleFormIdade from './Pages/FormIdade'
 
 function App() {
 
 
   return (
     <>
-      <SimpleForm/>
+      <SimpleFormIdade/>
     </>
   )
 }
