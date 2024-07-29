@@ -27,3 +27,32 @@ Usei React Bootstrap
 ````npm install react-bootstrap bootstrap````
 Form Overwiew
 
+1. Criei um form e seu CSS
+
+2. ```npm install react-hook-form```
+
+3. ```import { useForm } from "react-hook-form" ```
+
+4. Dentro da function > ```const { register, handleSubmit, watch, formState: { errors }} = useForm()```
+
+5. Dentro do input coloco > ```{ ... register ( "exemplo - name, email, senha" ) }``` -------- que ira mapear
+
+6. Colocar handleSubmit > ``` <form className={styles.formContainer} onSubmit={handleSubmit()}>``` ------- quem vamos chamar quando o formulário for enviado, usuario clicar no btn Cadastrar-se. Que função será chamada qdo clicar no btn Cadastrar-se.
+
+7. Criar uma função de qq nome que vai receber os dados que estamos enviando e que estará dentro do handleSubmit  > ```function onSubmit(userData){console.log(userData)}```
+
+8. Ainda não esta aparecendo ao clicar no btn (errors estão vindo vazio) > 
+```{ required: true }``` 
+dentro do register > ```{ ...register('nome' , { required: true })}``` deixando required e não deixando cadastrar.
+
+9. Coloquei a validação de 18 anos
+````
+{...register("idade", 
+    { required: true,
+        min: {
+        value: 18,
+        message: 'A idade mínima para cadastro é 18 anos.'
+        }
+    }
+)}
+````
