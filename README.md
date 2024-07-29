@@ -44,6 +44,7 @@ Ambiente de Testes: Vincule à branch develop. Use este ambiente para testar nov
 
 Este exercício ajudará a entender como organizar um projeto com GitFlow e a configurar deploys automáticos para diferentes ambientes.
 
+
 Professor Nicholas
 [Github da aula de Context](https://github.com/nicholasmacedoo/atualizar-bifurcacao)
 a partir da [template](https://github.com/FuturoDEV-Trip/M2S09-TEMPLATE-AULA2)
